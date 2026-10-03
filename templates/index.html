@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Notebook</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="top-bar">
+            <div class="title">Python Notebook</div>
+            <div class="actions">
+                <button id="runAllBtn" class="btn btn-primary" title="Run All (Ctrl+Shift+Enter)">▶ Run All</button>
+                <button id="newCellBtn" class="btn" title="New Cell (Alt+N)">+ Code</button>
+                <button id="saveBtn" class="btn" title="Save (Ctrl+S)">💾 Save</button>
+                <button id="clearAllBtn" class="btn btn-danger" title="Clear All Outputs">🗑 Clear All</button>
+                <button id="restartBtn" class="btn btn-warning" title="Restart Kernel">⟳ Restart</button>
+            </div>
+        </header>
+        
+        <main class="notebook" id="notebook"></main>
+        
+        <footer class="status-bar">
+            <span id="status">Ready</span>
+            <span id="cellCount">0 cells</span>
+        </footer>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
